@@ -54,6 +54,46 @@
 			font-weight: 600;
 		}
 
+		#chart-1 {
+			min-height: 350px;
+		}
+
+		.scatterplot {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-top: 8px;
+			overflow: visible;
+		}
+
+		.scatterplot .grid line {
+			stroke: #e5ebe7;
+			stroke-opacity: 0.9;
+		}
+
+		.scatterplot .grid path {
+			stroke-width: 0;
+		}
+
+		.scatterplot .axis path,
+		.scatterplot .axis line {
+			stroke: #9aaba2;
+		}
+
+		.scatterplot .axis text,
+		.scatterplot .axis-label {
+			fill: #52665c;
+			font-family: inherit;
+			font-size: 12px;
+		}
+
+		.scatterplot .dot {
+			fill: #c75c3a;
+			fill-opacity: 0.62;
+			stroke: #fff;
+			stroke-width: 0.6px;
+		}
+
 		@media (max-width: 680px) {
 			body {
 				padding: 20px 16px;
@@ -74,8 +114,8 @@
 	<main>
 		<h1>Energy Charts</h1>
 		<section class="chart-grid" aria-label="Charts">
-			<div class="chart-panel" id="chart-1" aria-label="Chart 1">
-				<h2>Chart 1</h2>
+			<div class="chart-panel" id="chart-1" aria-label="TV energy consumption and star rating scatterplot">
+				<h2>Energy Consumption vs Star Rating</h2>
 			</div>
 			<div class="chart-panel" id="chart-2" aria-label="Chart 2">
 				<h2>Chart 2</h2>
@@ -88,5 +128,7 @@
 			</div>
 		</section>
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+	<script src="script.js"></script>
 </body>
 </html>
