@@ -13,6 +13,7 @@ Promise.all([
 		};
 		renderEnergyScatterplot(tvEnergy);
 		renderEnergyDonut(tvEnergyAllSizes);
+		renderEnergyBarChart(tvEnergy55Inch);
 	})
 	.catch(error => {
 		console.error("Could not load chart datasets:", error);

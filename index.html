@@ -126,6 +126,47 @@
 			font-size: 11px;
 		}
 
+		#chart-3 {
+			min-height: 350px;
+		}
+
+		.bar-chart {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-top: 8px;
+		}
+
+		.bar-grid line {
+			stroke: #e5ebe7;
+		}
+
+		.bar-grid path {
+			stroke-width: 0;
+		}
+
+		.bar-axis path,
+		.bar-axis line {
+			stroke: #9aaba2;
+		}
+
+		.bar-axis text,
+		.bar-axis-label,
+		.bar-value {
+			font-family: inherit;
+			font-size: 12px;
+		}
+
+		.bar-axis text,
+		.bar-axis-label {
+			fill: #52665c;
+		}
+
+		.bar-value {
+			fill: #30483d;
+			font-weight: 600;
+		}
+
 		@media (max-width: 680px) {
 			body {
 				padding: 20px 16px;
@@ -152,8 +193,8 @@
 			<div class="chart-panel" id="chart-2" aria-label="Mean TV energy consumption by screen technology">
 				<h2>Energy by Screen Technology</h2>
 			</div>
-			<div class="chart-panel" id="chart-3" aria-label="Chart 3">
-				<h2>Chart 3</h2>
+			<div class="chart-panel" id="chart-3" aria-label="55-inch TV energy consumption by screen technology">
+				<h2>55-Inch TV Energy by Screen Technology</h2>
 			</div>
 			<div class="chart-panel" id="chart-4" aria-label="Chart 4">
 				<h2>Chart 4</h2>
