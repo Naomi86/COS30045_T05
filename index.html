@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Energy Charts</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: "Segoe UI", sans-serif;
+			color: #20322d;
+			background: #f3f6f2;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			min-width: 320px;
+			margin: 0;
+			padding: 32px;
+		}
+
+		h1 {
+			max-width: 1200px;
+			margin: 0 auto 24px;
+			font-size: 1.5rem;
+			font-weight: 650;
+		}
+
+		.chart-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.chart-panel {
+			min-height: 300px;
+			padding: 18px;
+			overflow: hidden;
+			background: #fff;
+			border: 1px solid #d8e1db;
+			border-top: 3px solid #3f7965;
+			border-radius: 6px;
+		}
+
+		.chart-panel h2 {
+			margin: 0;
+			color: #38554a;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		@media (max-width: 680px) {
+			body {
+				padding: 20px 16px;
+			}
+
+			.chart-grid {
+				grid-template-columns: 1fr;
+				gap: 14px;
+			}
+
+			.chart-panel {
+				min-height: 260px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Energy Charts</h1>
+		<section class="chart-grid" aria-label="Charts">
+			<div class="chart-panel" id="chart-1" aria-label="Chart 1">
+				<h2>Chart 1</h2>
+			</div>
+			<div class="chart-panel" id="chart-2" aria-label="Chart 2">
+				<h2>Chart 2</h2>
+			</div>
+			<div class="chart-panel" id="chart-3" aria-label="Chart 3">
+				<h2>Chart 3</h2>
+			</div>
+			<div class="chart-panel" id="chart-4" aria-label="Chart 4">
+				<h2>Chart 4</h2>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
