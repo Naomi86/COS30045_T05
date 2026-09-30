@@ -94,6 +94,38 @@
 			stroke-width: 0.6px;
 		}
 
+		#chart-2 {
+			min-height: 350px;
+		}
+
+		.donut-chart {
+			display: block;
+			width: 100%;
+			max-height: 270px;
+			margin-top: 12px;
+		}
+
+		.donut-slice {
+			stroke: #fff;
+			stroke-width: 2px;
+		}
+
+		.donut-label,
+		.donut-share {
+			font-family: inherit;
+		}
+
+		.donut-label {
+			fill: #30483d;
+			font-size: 13px;
+			font-weight: 600;
+		}
+
+		.donut-share {
+			fill: #718178;
+			font-size: 11px;
+		}
+
 		@media (max-width: 680px) {
 			body {
 				padding: 20px 16px;
@@ -117,8 +149,8 @@
 			<div class="chart-panel" id="chart-1" aria-label="TV energy consumption and star rating scatterplot">
 				<h2>Energy Consumption vs Star Rating</h2>
 			</div>
-			<div class="chart-panel" id="chart-2" aria-label="Chart 2">
-				<h2>Chart 2</h2>
+			<div class="chart-panel" id="chart-2" aria-label="Mean TV energy consumption by screen technology">
+				<h2>Energy by Screen Technology</h2>
 			</div>
 			<div class="chart-panel" id="chart-3" aria-label="Chart 3">
 				<h2>Chart 3</h2>
