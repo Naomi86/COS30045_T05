@@ -14,6 +14,7 @@ Promise.all([
 		renderEnergyScatterplot(tvEnergy);
 		renderEnergyDonut(tvEnergyAllSizes);
 		renderEnergyBarChart(tvEnergy55Inch);
+		renderSpotPriceLineChart(spotPrices);
 	})
 	.catch(error => {
 		console.error("Could not load chart datasets:", error);

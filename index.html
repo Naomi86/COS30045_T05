@@ -167,6 +167,54 @@
 			font-weight: 600;
 		}
 
+		#chart-4 {
+			min-height: 410px;
+		}
+
+		.spot-price-chart {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-top: 8px;
+		}
+
+		.spot-grid line {
+			stroke: #e5ebe7;
+		}
+
+		.spot-grid path {
+			stroke-width: 0;
+		}
+
+		.spot-axis path,
+		.spot-axis line {
+			stroke: #9aaba2;
+		}
+
+		.spot-axis text,
+		.spot-axis-label,
+		.spot-legend text {
+			fill: #52665c;
+			font-family: inherit;
+			font-size: 11px;
+		}
+
+		.spot-line {
+			fill: none;
+			stroke-width: 2.2px;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+		}
+
+		.spot-legend line {
+			stroke-width: 2.5px;
+		}
+
+		.spot-point {
+			stroke: #fff;
+			stroke-width: 0.7px;
+		}
+
 		@media (max-width: 680px) {
 			body {
 				padding: 20px 16px;
@@ -196,8 +244,8 @@
 			<div class="chart-panel" id="chart-3" aria-label="55-inch TV energy consumption by screen technology">
 				<h2>55-Inch TV Energy by Screen Technology</h2>
 			</div>
-			<div class="chart-panel" id="chart-4" aria-label="Chart 4">
-				<h2>Chart 4</h2>
+			<div class="chart-panel" id="chart-4" aria-label="Annual Australian regional wholesale spot prices from 1998 to 2024">
+				<h2>Spot Power Prices by Region, 1998-2024</h2>
 			</div>
 		</section>
 	</main>
